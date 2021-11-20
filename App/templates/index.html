@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/css/bootstrap.css" />
+    {% comment %} <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> {% endcomment %}
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Foreign Exchange Currency </title>
+    
+  </head>
+  <body style="overflow:hidden">
+    <br><br><br>
+  <div class="container" >
+  <div  style="align-content: left;">
+       <select  id="currency-one" >
+        <option value="USD" selected>USD - United States Dollar </option>
+      </select> 
+      {% comment %} <label for="javascript">USD</label> {% endcomment %}
+      <input type="number" id="amount-one"  value="10" style="width:30%; text-align:right;" />
+    </div>
+    <hr style="align-content: center; color: black;"></hr>
+    <!-- For adding currency -->
+    <!-- <button type="button">(+) Add more currencies</button> -->
+    <br>
+        <div>
+    <table class="table" style='width: 50%;' >
+     <tbody id="resultTable">
+     </tbody>
+      </table>
+    </div>
+    <div class="currency">  
+         <select id="currency-to-add">
+         <option value="NAN" selected >(+) Add more currencies</option>
+          <option value="CAD">Canadian Dollar</option>
+          <option value="IDR">Indonesian Rupiah</option>
+          <option value="USD" >United States Dollar</option>
+          <option value="GBP">British Pound Sterling</option>
+          <option value="CHF">Swiss Franc</option>
+          <option value="SGD">Singaporean Dollar</option>
+          <option value="INR">Indian Rupee</option>
+          <option value="MYR">Malaysian Ringgit</option>
+          <option value="JPY">Japanese Yen</option>
+          <option value="KRW">South Korean Won</option> 
+        </select>     
+    </div>
+
+</div>
+
+
+<br>
+  <!-- Dynamic rate inserted in DOM based on exchange rate fetched from API -->
+   {% comment %} <div class="rate" id="rate"></div>
+    <br>
+    <div class="container">
+      <div class="currency">
+         <select id="currency-two">
+          <option value="CAD">Canadian Dollar</option>
+          <option value="IDR">Indonesian Rupiah</option>
+          <option value="USD" selected >United States Dollar</option>
+          <option value="GBP">British Pound Sterling</option>
+          <option value="CHF">Swiss Franc</option>
+          <option value="SGD">Singaporean Dollar</option>
+          <option value="INR">Indian Rupee</option>
+          <option value="MYR">Malaysian Ringgit</option>
+          <option value="JPY">Japanese Yen</option>
+          <option value="KRW">South Korean Won</option> 
+        </select>
+        <input type="number" id="amount-two" placeholder="0" value="1" style="width:30%" />
+      </div>
+  </div>  {% endcomment %}
+  <br><br><br>
+  <script src="static/js/app.js"></script>
+  </body>
+</html>
